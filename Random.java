@@ -21,7 +21,7 @@ public class Random {
         Scanner s = new Scanner(new File("pi.txt"));
         while (s.hasNext()) {
             String numbers = s.nextLine();
-            for (int i = 0; i < numbers.length(); i++) {
+            for (int i = 0; i < numbers.length()-1; i++) {
                 arr[i] = Integer.parseInt(numbers.substring(i, i + 1));
             }
         }
